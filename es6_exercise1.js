@@ -8,7 +8,9 @@ let input = [
 
 function printArray(arr){
 	for(const {type,text} of arr){
-	console.log((type === 'li')?`Element type is ${type} with text ${text}`:'');
+		if(type === 'li'){
+			console.log(`Element type is ${type} with text ${text}`);
+		}
 	}
 }
 
